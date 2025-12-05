@@ -1,13 +1,21 @@
-/* Import Inter from Google Fonts */
+/********************************************
+FONTS STUFF - import Roboto from Google Fonts
+********************************************/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap');
 
-/* Add black background to body */
+
+/********************************************
+GLOBAL STYLES - this sets the background to black
+********************************************/
 body {
-    background-color: #000;
-    font-family: 'Inter', sans-serif;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Wrapper to constrain all content */
+
+/********************************************
+LAYOUT - SITE WRAPPER - so the site doesn't look too stretched on ultra-wide monitors
+********************************************/
 .site-wrapper {
     max-width: 1440px;
     margin: 0 auto;
@@ -16,10 +24,17 @@ body {
     position: relative;
 }
 
-/* Make navbar background extend full width */
+
+/********************************************
+NAVIGATION - NAVBAR - this section covers the navigation bar at the top of the screen
+********************************************/
 .navbar {
     background-color: #333 !important;
-    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1040;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding-left: calc(50vw - 50%);
@@ -46,6 +61,7 @@ body {
     color: #ddd !important;
 }
 
+/* Navbar Toggle Button */
 .navbar-toggler {
     border-color: white;
     position: relative;
@@ -61,6 +77,10 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6l18 18M6 24L24 6'/%3e%3c/svg%3e");
 }
 
+
+/********************************************
+HERO SECTION - this is for the hero image at the top of the page
+********************************************/
 .hero {
     height: 70vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
@@ -81,10 +101,20 @@ body {
     font-size: 1.2rem;
 }
 
+
+/********************************************
+   CONTENT SECTIONS
+********************************************/
 .content-section {
     padding: 3rem 0;
 }
 
+
+/********************************************
+   MEDIA QUERIES - RESPONSIVE DESIGN - this is what makes the page look nice on mobile devices
+********************************************/
+
+/* Tablet & Small Devices */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
@@ -95,8 +125,8 @@ body {
     }
 }
 
+/* Mobile Navigation Menu */
 @media (max-width: 991px) {
-    /* Mobile menu styles */
     .navbar-collapse {
         position: fixed;
         top: 0;

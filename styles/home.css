@@ -1,0 +1,63 @@
+/********************************************
+HERO SECTION - this is for the hero image at the top of the page
+********************************************/
+.hero {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Overlay for hero section */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+    z-index: 1;
+}
+
+/* Ensure content appears above overlay */
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+
+/********************************************
+   CONTENT SECTIONS
+********************************************/
+.content-section {
+    padding: 3rem 0;
+}
+
+
+/********************************************
+   MEDIA QUERIES - RESPONSIVE DESIGN - this is what makes the page look nice on mobile devices
+********************************************/
+
+/* Tablet & Small Devices */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}

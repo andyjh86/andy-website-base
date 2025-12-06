@@ -79,51 +79,8 @@ NAVIGATION - NAVBAR - this section covers the navigation bar at the top of the s
 
 
 /********************************************
-HERO SECTION - this is for the hero image at the top of the page
-********************************************/
-.hero {
-    height: 70vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200') center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-
-/********************************************
-   CONTENT SECTIONS
-********************************************/
-.content-section {
-    padding: 3rem 0;
-}
-
-
-/********************************************
    MEDIA QUERIES - RESPONSIVE DESIGN - this is what makes the page look nice on mobile devices
 ********************************************/
-
-/* Tablet & Small Devices */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-}
 
 /* Mobile Navigation Menu */
 @media (max-width: 991px) {
